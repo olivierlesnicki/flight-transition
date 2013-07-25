@@ -15,7 +15,6 @@ bower install --save flight-transition
 #### HTML
 
 ``` html
-
 <div id="transition"></div>
 
 <div id="pages" style="diplay: none; visibility: hidden;">
@@ -26,13 +25,11 @@ bower install --save flight-transition
     ... world.
  </div>
 </div>
-
 ```
 
 #### JS
 
 ``` javascript
-
 define(['flight-transition'], function(Transition) {
 
   // Open a default page without any transition on component initialization
@@ -47,7 +44,6 @@ define(['flight-transition'], function(Transition) {
   });
 
 });
-
 ```
 
 ## Development
