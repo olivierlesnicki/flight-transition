@@ -27,21 +27,23 @@ bower install --save flight-transition
 
 ### JS
 
-    define(['flight-transition'], function(Transition) {
-    
-      // Open a default page without any transition on component initialization
-      Transition.attachTo('#transition', {
-        defaultInSelector: '#defaultPage'
-      });
-    
-      // Open a second page using transition 
-      // (in this example content will slide from right to left)
-      $(document).trigger('dataTransition', {
-        inSelector: '#anOtherPage',
-        animation : 'moveFromLeft' 
-      });
-    
-    });
+``` javascript
+define(['flight-transition'], function(Transition) {
+
+  // Open a default page without any transition on component initialization
+  Transition.attachTo('#transition', {
+    defaultInSelector: '#defaultPage'
+  });
+
+  // Open a second page using transition 
+  // (in this example content will slide from right to left)
+  $(document).trigger('dataTransition', {
+    inSelector: '#anOtherPage',
+    animation : 'moveFromLeft' 
+  });
+
+});
+```
 
 ## Development
 
