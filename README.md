@@ -12,7 +12,7 @@ bower install --save flight-transition
 
 ## Example
 
-### HTML
+#### HTML
 
 ``` html
 
@@ -29,7 +29,7 @@ bower install --save flight-transition
 
 ```
 
-### JS
+#### JS
 
 ``` javascript
 
