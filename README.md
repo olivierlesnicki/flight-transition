@@ -14,20 +14,25 @@ bower install --save flight-transition
 
 ### HTML
 
-   <div id="transition"></div>
-   
-   <div id="pages" style="diplay: none; visibility: hidden;">
-     <div id="defaultPage">
-        Hello ...
-     </div>
-     <div id="anOtherPage">
-        ... world.
-     </div>
-   </div>
+``` html
+
+<div id="transition"></div>
+
+<div id="pages" style="diplay: none; visibility: hidden;">
+ <div id="defaultPage">
+    Hello ...
+ </div>
+ <div id="anOtherPage">
+    ... world.
+ </div>
+</div>
+
+```
 
 ### JS
 
 ``` javascript
+
 define(['flight-transition'], function(Transition) {
 
   // Open a default page without any transition on component initialization
@@ -35,14 +40,14 @@ define(['flight-transition'], function(Transition) {
     defaultInSelector: '#defaultPage'
   });
 
-  // Open a second page using transition 
-  // (in this example content will slide from right to left)
+  // Open a second page using animated transition 
   $(document).trigger('dataTransition', {
     inSelector: '#anOtherPage',
     animation : 'moveFromLeft' 
   });
 
 });
+
 ```
 
 ## Development
