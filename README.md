@@ -1,8 +1,8 @@
 # flight-transition
 
-[![Build Status](https://secure.travis-ci.org/<username>/flight-transition.png)](http://travis-ci.org/<username>/flight-transition)
+[![Build Status](https://secure.travis-ci.org/<username>/flight-transition.png)](http://travis-ci.org/olivierlesnicki/flight-transition)
 
-A [Flight](https://github.com/flightjs/flight) component for…
+A [Flight](https://github.com/flightjs/flight) component for [Codrops](http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/) page transitions. 
 
 ## Installation
 
@@ -12,7 +12,36 @@ bower install --save flight-transition
 
 ## Example
 
-…
+### HTML
+
+   <div id="transition"></div>
+   
+   <div id="pages" style="diplay: none; visibility: hidden;">
+     <div id="defaultPage">
+        Hello ...
+     </div>
+     <div id="anOtherPage">
+        ... world.
+     </div>
+   </div>
+
+### JS
+
+    define(['flight-transition'], function(Transition) {
+    
+      // Open a default page without any transition on component initialization
+      Transition.attachTo('#transition', {
+        defaultInSelector: '#defaultPage'
+      });
+    
+      // Open a second page using transition 
+      // (in this example content will slide from right to left)
+      $(document).trigger('dataTransition', {
+        inSelector: '#anOtherPage',
+        animation : 'moveFromLeft' 
+      });
+    
+    });
 
 ## Development
 
