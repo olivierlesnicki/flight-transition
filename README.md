@@ -1,8 +1,9 @@
 # flight-transition
 
-[![Build Status](https://secure.travis-ci.org/<olivierlesnicki>/flight-transition.png)](http://travis-ci.org/olivierlesnicki/flight-transition)
+[![Build Status](https://secure.travis-ci.org/olivierlesnicki/flight-transition.png)](http://travis-ci.org/olivierlesnicki/flight-transition)
 
 A [Flight](https://github.com/flightjs/flight) component for [Codrops](http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/) page transitions. 
+
 
 ## Installation
 
