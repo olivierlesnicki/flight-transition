@@ -9,7 +9,6 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
-    
   'bower_components/es5-shim/es5-shim.js',
   'bower_components/es5-shim/es5-sham.js',
 
@@ -49,11 +48,11 @@ reporters = [
 
 // web server port
 // CLI --port 9876
-port = 9876;
+port = process.env.PORT;
 
 // cli runner port
 // CLI --runner-port 9100
-runnerPort = 9100;
+runnerPort = 0;
 
 // enable / disable colors in the output (reporters and logs)
 // CLI --colors --no-colors
@@ -92,3 +91,5 @@ singleRun = false;
 // report which specs are slower than 500ms
 // CLI --report-slower-than 500
 reportSlowerThan = 500;
+
+hostname =  process.env.IP;
